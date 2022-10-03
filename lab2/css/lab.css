@@ -63,7 +63,7 @@ p {
 
 #examplediv {
   border: 200px solid transparent;
-  border-image: <img src="img/abomination_hey_baby_4_transparent.png"/>("lab2/img/border.png") 100% round;
+  border-image: url("/lab2/img/border.png") 20 round;
   background-color: #F8F8E6
   right: 0px;
   width:50%;
