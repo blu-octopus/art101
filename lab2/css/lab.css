@@ -1,5 +1,19 @@
-p{
-  font-family: "monospace";
+h1 {
+  color: #F8F8E7;
+  font-size: 105%;
+}
+p {
+  color: #F8F8E7;
+  font-family: georgia;
   text-indent: 20px;
   margin-left: 10px;
+}
+#content {
+  background-color: #4E5F55;
+  width: 500px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #5A866D;
+  border-style: dotted dashed dotted dashed;
 }
