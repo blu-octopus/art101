@@ -14,6 +14,10 @@ p {
   min-height: 300px;
   padding: 10px;
   margin: 10px;
-  border: solid 1px #5A866D;
-  border-style: dotted dashed dotted dashed;
+  border: 10px #5A866D;
+  border-left-style:dashed;
+  border-right-style: double;
+  border-bottom-style: groove;
+  border-top-style: dotted;
+
 }
