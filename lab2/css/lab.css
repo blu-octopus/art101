@@ -1,5 +1,5 @@
 body {
-  background-image: url("bg.png");
+  background-image: url("lab2/img/bg.png");
   /*background-image: linear-gradient(#4E5F55, #F8F8E7);
   */
   background-color: #4E5F55;
@@ -14,6 +14,10 @@ p {
   text-indent: 20px;
   margin-left: 10px;
 }
+#background{
+
+}
+
 #content {
   background-color: #4E5F55;
   text-align: center;
