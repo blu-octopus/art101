@@ -9,7 +9,7 @@ make = "Squishmellow";
 model= "Wendy the Frog";
 color= "Green";
 year= 2017;
-ownIt = true;
+ownIt = false;
 
 //calculate
 age = 2022 - year;
