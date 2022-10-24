@@ -3,6 +3,7 @@
  * Created:   10.23.2022
  *
  **/
+
 //change userName
 userName = window.prompt("Your name is: ", "put your name here");
 console.log("userName =", userName);
@@ -59,22 +60,10 @@ function shuffle(array) {
   return capArr;
 }
 
-/*
-function shuffleName(name) {
 
-  var sortedname = name.split('').sort()
-
-  return sortedname.join('');
-}
-*/
 //Output
 document.writeln("You had given me the name: ", userName, "</br>")
 var name = makeName();
 document.writeln("Your better name: ", name, "</br>");
 var randomnizedName = shuffle(nameArray);
 document.writeln("Your shuffled name: ", randomnizedName, "</br>");
-
-/*
-var sorted_name = shuffleName(name)
-document.writeln("sorted name: ", sorted_name, "</br>");
-*/
