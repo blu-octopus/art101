@@ -31,13 +31,38 @@
 	</div>
 	<div id = "writeup">
 		<h2> Challenges </h2>
-		<p></p>
+		<p>We faced challenge trying to get the callback of the JS to work in the html.</p>
 		<h2> Problems </h2>
-		<p></p>
+		<p>We had trouble using the innerHTML to print out messages.
+       It was difficult to format with just one return function to be put in innerHTML.
+       We ended up using just document.writeln to print out our message.
+     </p>
 		<h2> Results </h2>
-		<p></p>
+		<p>The output of our javascript function can be seen below, displaying the corresponding output to each element of the array.
+       There are other print statements showcasing functionality of the functions we wrote in the console.
+    </p>
 	</div>
 
+  <div id="output" class="output">
+    <h2>Javascript output</h2>
+    <p> You can see more things by clicking the <i>"inspect"</i> and going to the <b>console</b>. </p>
+
+    <script>
+      document.writeln("Original array: [", array, "] </br></br>");
+      document.writeln("Evenness of array: [", temp_even, "] </br>");
+      document.writeln("Squareroots of array: [", temp_sqrt, "] </br>");
+      document.writeln("Squares of array: [", temp_sqr, "] </br>");
+      document.writeln("Power of array: [", temp_pwr, "] </br> </br>");
+
+      var outputEl = document.getElementById("output");
+      //outputEl.innerHTML = mapResults(); // put your results here
+
+      function mapResults(){
+        var print_msg = "End of callback"
+        return print_msg;
+      }
+    </script>
+  </div>
 
 
 </body>
