@@ -48,17 +48,23 @@
     <p> You can see more things by clicking the <i>"inspect"</i> and going to the <b>console</b>. </p>
 
     <script>
-      document.writeln("Original array: [", array, "] </br></br>");
-      document.writeln("Evenness of array: [", temp_even, "] </br>");
-      document.writeln("Squareroots of array: [", temp_sqrt, "] </br>");
-      document.writeln("Squares of array: [", temp_sqr, "] </br>");
-      document.writeln("Power of array: [", temp_pwr, "] </br> </br>");
+			document.writeln("Original array: [", array, "] </br></br>");
+			document.writeln("Evenness of array: [", temp_even, "] </br>");
+			document.writeln("Squareroots of array: [", temp_sqrt, "] </br>");
+			document.writeln("Squares of array: [", temp_sqr, "] </br>");
+			document.writeln("Power of array: [", temp_pwr, "] </br> </br>");
 
       var outputEl = document.getElementById("output");
       //outputEl.innerHTML = mapResults(); // put your results here
 
       function mapResults(){
-        var print_msg = "End of callback"
+				var print_msg = ""
+				// print_msg += "Original array: [", array, "] </br></br>";
+	      // print_msg += "Evenness of array: [", temp_even, "] </br>");
+	      // print_msg += "Squareroots of array: [", temp_sqrt, "] </br>";
+	      // print_msg += "Squares of array: [", temp_sqr, "] </br>";
+	      // print_msg += "Power of array: [", temp_pwr, "] </br> </br>";
+				print_msg += "End of callback";
         return print_msg;
       }
     </script>
