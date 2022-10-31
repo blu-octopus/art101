@@ -5,8 +5,8 @@
  *
  **/
 
- //2 Using getElementById()
-var outputEl = document.getElementById("output");
+//2 Using getElementById()
+var outputEl = document.getElementById("js");
 console.log("outputEl: ", outputEl);
 
 //3 document.createElement
@@ -21,7 +21,6 @@ new1El.id = "new-one";
 
 //5 new element
 //create <p></p>
-
 var new2El = document.createElement("p");
 //id to go in css
 new2El.id = "new-two";
@@ -35,3 +34,4 @@ outputEl.appendChild(new1El);
 outputEl.appendChild(new2El);
 
 //8 change css attribute?
+//in lab9/css/lab9.css

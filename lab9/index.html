@@ -37,13 +37,40 @@
 		<p></p>
 	</div>
 
-  <div id="output" class="output">
+	<div id="output" class="output">
 		<img src="../lab8/img/frog.gif" alt="" id="img1"/>
 		<img src="../lab8/img/frog.gif" alt="" id="img2"/>
-    <script>
-    </script>
-  </div>
 
+		<h2> Javascript Output </h2>
+		<p> Click "Add" to add element to top.
+			<button class="button-55" role="button" id="indiv" onclick="myFunction()">Add</button>
+		</p>
+
+		<div id="js" >
+
+			<script >
+			function myFunction() {
+				//new element
+				var new3El = document.createElement("p");
+				new3El.id = "new-three";
+				new3El.innerHTML = "The new thing.";
+				outputEl.prepend(new3El);
+				}
+			</script>
+  	</div>
+
+	</div>
+
+	<div id="bottom" class="bottom">
+		<center>
+			<p id="time">Last update: </p>
+		</center>
+
+		<script>
+			let text = document.lastModified;
+			document.getElementById("time").innerHTML = "Last update: " + text;
+		</script>
+	</div>
 
 </body>
 </html>
