@@ -6,7 +6,7 @@
  **/
 
 //2 Using getElementById()
-var outputEl = document.getElementById("js");
+var outputEl = document.getElementById("output");
 console.log("outputEl: ", outputEl);
 
 //3 document.createElement
