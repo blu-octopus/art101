@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 10 - JavaScript Events and Forms</title>
+	<link rel="stylesheet" type="text/css" href="css/lab10.css">
+  <script src = "js/lab10.js" defer></script>
+</head>
+<body>
+
+
+	<div id = "title">
+		<img src="../lab8/img/frog.gif" alt="" id="img1"/>
+		<img src="../lab8/img/frog.gif" alt="" id="img2"/>
+		<h1>Lab 10</h1>
+	</div>
+
+	<div id ="buttons">
+		<button class="button-55" role="button" onclick="window.location.href='../index.html'"> Main Page </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab2/index.html'"> Lab 2 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab3/index.html'"> Lab 3 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab4/index.html'"> Lab 4 </button>
+    <button class="button-55" role="button" onclick="window.location.href='../lab5/index.html'"> Lab 5 </button>
+    <button class="button-55" role="button" onclick="window.location.href='../lab6/index.html'"> Lab 6 </button>
+    <button class="button-55" role="button" onclick="window.location.href='../lab7/index.html'"> Lab 7 </button>
+    <button class="button-55" role="button" onclick="window.location.href='../lab8/index.html'"> Lab 8 </button>
+	</div>
+
+	<div id = "writeup">
+		<h2> Challenges </h2>
+		<p></p>
+		<h2> Problems </h2>
+		<p></p>
+		<h2> Results </h2>
+		<p></p>
+	</div>
+
+	<div id = "javascript">
+		<h2> Change your name here </h2>
+		<button class="button-55" role="button" id="sort-button">Sort name</button>
+		<button class="button-55" role="button" id="anagram-button">Mix name up</button>
+
+		<label for="inp" class="inp">
+  		<input type="text" id="user-name" placeholder="&nbsp;">
+  		<span class="label">type name here</span>
+  		<span class="focus-bg"></span>
+		</label>
+
+		<div id="output" class="output"> </div>
+	</div>
+
+
+
+	<div id="bottom" class="bottom">
+		<center>
+			<p></p>
+			<a href="../lab9/js/lab9.js">This lab's .js file</a>
+			<p id="time">Last update:	</p>
+		</center>
+
+		<script>
+			let text = document.lastModified;
+			document.getElementById("time").innerHTML = "Last update: " + text ;
+		</script>
+	</div>
+
+</body>
+</html>
