@@ -65,7 +65,16 @@ body{
   text-shadow: rgba(0, 0, 0, .5) 2px 8px 8px -5px;
 }
 
-#javascript {
+#text {
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
+  border: 10px #5A866D double;
+  border-right-style: groove;
+  border-bottom-style: groove;
+  text-indent: 10px;
+  text-transform:full-width 10px;
+}
+
+#math {
   box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
   border: 10px #5A866D double;
   border-right-style: groove;

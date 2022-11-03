@@ -56,6 +56,7 @@
  sort_button = document.getElementById("sort-button");
  anagram_button = document.getElementById("anagram-button");
  outputEl = document.getElementById("output");
+ output2 = document.getElementById("output2");
 
  sort_button.addEventListener("click", function(){
   var inputVal = document.getElementById('user-name').value;
