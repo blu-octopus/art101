@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 11 - Libraries and jQuery</title>
+	<link rel="stylesheet" type="text/css" href="css/lab12.css">
+
+	<!-- Load jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script src = "js/lab12.js" defer></script>
+</head>
+<body>
+
+	<!-- holy froggy guardians -->
+	<div id = "title">
+		<img src="../lab8/img/frog.gif" alt="" id="img1"/>
+		<img src="../lab8/img/frog.gif" alt="" id="img2"/>
+		<h1>Lab 12</h1>
+	</div>
+
+	<div id ="buttons">
+		<button class="button-55" role="button" onclick="window.location.href='../index.html'"> Main Page </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab2/index.html'"> Lab 2 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab3/index.html'"> Lab 3 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab4/index.html'"> Lab 4 </button>
+    <button class="button-55" role="button" onclick="window.location.href='../lab5/index.html'"> Lab 5 </button>
+    <button class="button-55" role="button" onclick="window.location.href='../lab6/index.html'"> Lab 6 </button>
+    <button class="button-55" role="button" onclick="window.location.href='../lab7/index.html'"> Lab 7 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab8/index.html'"> Lab 8 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab9/index.html'"> Lab 9</button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab10/index.html'"> Lab 10 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab10/index.html'"> Lab 11 </button>
+	</div>
+
+
+	<div id="challenges" class="writeup">
+		<h2> Challenges </h2>
+		<p>	</p>
+	</div>
+
+	<div id="problems" class="writeup">
+		<h2> Problems </h2>
+		<p></p>
+	</div>
+
+	<div id="results" class="writeup">
+		<h2> Results </h2>
+		<p></p>
+	</div>
+
+	<div class="writeup">
+		<h2> Welcome to froggy world!</h2>
+		<p> </p>
+		Please enter your name for sorting
+
+		<input type="text" id="input">
+		<button class="button-55" id=button>Submit </button>
+
+		<div id="output">
+			<h2> </h2>
+		</div>
+
+	</div>
+
+
+	<div id="bottom" class="bottom">
+		<center>
+			<p></p>
+			<a href="../lab12/js/lab12.js">This lab's .js file</a>
+			<p id="time">Last update:	</p>
+		</center>
+
+		<script>
+			let text = document.lastModified;
+			document.getElementById("time").innerHTML = "Last update: " + text ;
+		</script>
+	</div>
+
+</body>
+</html>
