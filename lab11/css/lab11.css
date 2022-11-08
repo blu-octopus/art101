@@ -5,6 +5,7 @@
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  transition: all 200ms ease-in-out;
 }
 /* .special {
   color: #4E5F55;
