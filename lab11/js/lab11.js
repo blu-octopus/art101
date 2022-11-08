@@ -16,21 +16,22 @@ $(".output-left").append("<button class='button-55' id='left-button'>Change -> c
 $(".output-right").append("<button class='button-55' id='right-button'> Change <- color! </button>");
 
 
- tog_c = true;
- tog_p = true;
- tog_r = true;
+ //tog_c = true;
+ // tog_p = true;
+ // tog_r = true;
  tog_color = 0;
 
  //event listner
  $("#c-button").click(function(){
    console.log("clicked c button");
-   tog_c = !tog_c;
-   console.log("bool tog is ", tog_c);
-   if(!tog_c){
-     $(this).parent().css("background-color", "#4E5F50");
-   }else{
-     $(this).parent().css("background-color", "#F8F8E7");
-   }
+   $(this).parent().toggleClass("special");
+   // tog_c = !tog_c;
+   // console.log("bool tog is ", tog_c);
+   // if(!tog_c){
+   //   $(this).parent().css("background-color", "#4E5F50");
+   // }else{
+   //   $(this).parent().css("background-color", "#F8F8E7");
+   // }
  })
  //button color deepens when hover over
  $("#c-button").hover(function(){
@@ -43,13 +44,14 @@ $(".output-right").append("<button class='button-55' id='right-button'> Change <
 
  $("#p-button").click(function(){
    console.log("clicked p button");
-   tog_p = !tog_p;
-   console.log("bool tog is ", tog_p);
-   if(!tog_p){
-     $(this).parent().css("background-color", "#4E5F5A");
-   }else{
-     $(this).parent().css("background-color", "#F8F8E7");
-   }
+   $(this).parent().toggleClass("special");
+   // tog_p = !tog_p;
+   // console.log("bool tog is ", tog_p);
+   // if(!tog_p){
+   //   $(this).parent().css("background-color", "#4E5F5A");
+   // }else{
+   //   $(this).parent().css("background-color", "#F8F8E7");
+   //}
  })
  //button color deepens when hover over
  $("#p-button").hover(function(){
@@ -62,13 +64,14 @@ $(".output-right").append("<button class='button-55' id='right-button'> Change <
 
  $("#r-button").click(function(){
    console.log("clicked r button");
-   tog_r = !tog_r;
-   console.log("bool tog is ", tog_r);
-   if(!tog_r){
-     $(this).parent().css("background-color", "#4E5F65");
-   }else{
-     $(this).parent().css("background-color", "#F8F8E7");
-   }
+   $(this).parent().toggleClass("special");
+   // tog_r = !tog_r;
+   // console.log("bool tog is ", tog_r);
+   // if(!tog_r){
+   //   $(this).parent().css("background-color", "#4E5F65");
+   // }else{
+   //   $(this).parent().css("background-color", "#F8F8E7");
+   // }
  })
  //button color deepens when hover over
  $("#r-button").hover(function(){

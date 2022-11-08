@@ -7,12 +7,10 @@
   margin: 10px;
   transition: all 50ms ease-in-out;
 }
-/* .special {
-  color: #4E5F55;
-  text: #4E5F55;
+
+.writeup.special {
   background-color: #4E5F55;
-  border: solid 1px maroon;
-} */
+}
 .output-container{
   text-align: center;
   background-color: #F8F8E7;
