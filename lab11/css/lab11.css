@@ -1,18 +1,41 @@
 .writeup {
-  background-color: #4E5F55;
+  background-color: #F8F8E7;
   text-shadow: rgba(0, 0, 0, .5) 2px 8px 8px -5px;
   border: 10px #5A866D double;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
 }
-
-//special
-.special {
-  color: #F8F8E7;
+/* .special {
+  color: #4E5F55;
   text: #4E5F55;
-  background-color: #F8F8E7;
+  background-color: #4E5F55;
   border: solid 1px maroon;
+} */
+.output-container{
+  text-align: center;
+  background-color: #F8F8E7;
+  text-shadow: rgba(0, 0, 0, .5) 2px 8px 8px -5px;
+  border: 10px #5A866D double;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  transition: all 400ms ease-in-out;
+  display:flex;
+}
+.output-child{
+  margin: 5;
+  flex: 1;
+}
+.output-child:first-child {
+    margin-right: 20px;
+}
+
+#right-button{
+  border: var(--button-border-color);
+}
+#left-button{
+  border: var(--button-border-color);
 }
 
 body{
@@ -30,6 +53,7 @@ body{
   background: linear-gradient(90deg, #F8F8E7, #4E5F55, #5A866D);
   background-size: 150% 150%;
   animation: gradient 10s ease-in infinite;
+  font-family: din-round;
 }
 
 @keyframes gradient {
@@ -113,6 +137,7 @@ body{
   color: #41403e;
   cursor: pointer;
   display: inline-block;
+  font-family: din-round;
   font-size: 1rem;
   line-height: 23px;
   outline: none;
