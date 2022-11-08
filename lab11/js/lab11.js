@@ -27,7 +27,7 @@ $(".output-right").append("<button class='button-55' id='right-button'> Change <
    tog_c = !tog_c;
    console.log("bool tog is ", tog_c);
    if(!tog_c){
-     $(this).parent().css("background-color", "#4E5F55");
+     $(this).parent().css("background-color", "#4E5F50");
    }else{
      $(this).parent().css("background-color", "#F8F8E7");
    }
@@ -46,7 +46,7 @@ $(".output-right").append("<button class='button-55' id='right-button'> Change <
    tog_p = !tog_p;
    console.log("bool tog is ", tog_p);
    if(!tog_p){
-     $(this).parent().css("background-color", "#4E5F55");
+     $(this).parent().css("background-color", "#4E5F5A");
    }else{
      $(this).parent().css("background-color", "#F8F8E7");
    }
@@ -65,7 +65,7 @@ $(".output-right").append("<button class='button-55' id='right-button'> Change <
    tog_r = !tog_r;
    console.log("bool tog is ", tog_r);
    if(!tog_r){
-     $(this).parent().css("background-color", "#4E5F55");
+     $(this).parent().css("background-color", "#4E5F65");
    }else{
      $(this).parent().css("background-color", "#F8F8E7");
    }
@@ -82,6 +82,7 @@ $(".output-right").append("<button class='button-55' id='right-button'> Change <
  //left color button is clicked
   $("#left-button").click(function(){
     console.log("clicked color button");
+    $("#output").css("border", "groove");
     tog_color += 1;
     if(tog_color == 1){
       //red
@@ -113,6 +114,7 @@ $(".output-right").append("<button class='button-55' id='right-button'> Change <
   //right color button is clicked
   $("#right-button").click(function(){
    console.log("clicked color button");
+   $("#output").css("border", "groove");
    tog_color += 1;
    if(tog_color == 1){
      //red
