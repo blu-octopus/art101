@@ -20,10 +20,11 @@
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
-  transition: all 400ms ease-in-out;
+  transition: all 800ms ease-in-out;
   display:flex;
 }
 .output-child{
+  transition: all 200ms ease-in-out;
   margin: 5;
   flex: 1;
 }
