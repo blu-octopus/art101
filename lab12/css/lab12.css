@@ -46,7 +46,7 @@ body{
 
 #img1 {
   width: 90px;
-  height: 70px;
+  height: auto;
   margin: 10px;
   margin-right: 5%;
   margin-left: 5%;
@@ -54,20 +54,45 @@ body{
 }
 #img2 {
   width: 90px;
-  height: 70px;
+  height: auto;
   margin: 10px;
   margin-right: 5%;
   margin-left: 5%;
   float: right;
 }
 /*froggy in output*/
-#imgSort{
+#imgFrog {
   width: 90px;
   height: 70px;
   margin: 10px;
   margin-right: 5%;
   margin-left: 5%;
-  float: left;
+  float: right;
+}
+.writeup {
+  background-color: #F8F8E7;
+  text-shadow: rgba(0, 0, 0, .5) 2px 8px 8px -5px;
+  border: 10px #5A866D double;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  transition: all 50ms ease-in-out;
+}
+#output-container{
+  text-align: center;
+  background-color: #F8F8E7;
+  text-shadow: rgba(0, 0, 0, .5) 2px 8px 8px -5px;
+  border: 10px #5A866D double;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  transition: all 800ms ease-in-out;
+  display:flex;
+  height: 200px 5%;
+}
+.output-child{
+  transition: all 200ms ease-in-out;
+  flex: 2;
 }
 
 #text {

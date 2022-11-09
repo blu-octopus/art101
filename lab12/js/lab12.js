@@ -29,17 +29,17 @@
 
  //task 2
  var houses = ["Big frog", "Normie frog", "Smol frog", "Chunky frog"];
- var descriptions = ["this means you are brave", "this means you are smart", "this means you are detail oriented", "this means you are kind"]
+ var descriptions = ["this means you are brave.", "this means you are smart.", "this means you are detail oriented.", "this means you are kind."];
+ var widths = ["540px", "90px", "10px", "150px"];
+ var heights = ["430px", "70px", "7px", "70px"];
 
  function sortingHat(str) {
-   len = str.length;
-   console.log("length is ", len);
    hashedValue = checksum(str);
-   console.log("hashedValue is ", hashedValue);
    mod = Math.abs(hashedValue) % houses.length;
-   desc = descriptions[mod];
-   console.log("desc is updated to ", desc);
-   return houses[mod];
+   console.log("width is ", widths[mod]);
+   return [houses[mod], descriptions[mod], widths[mod], heights[mod]];
+   //len = str.length;
+   //mod = len % houses.length;
    // if (mod == 0) {
    //   return "Gryffindor"
    // }
@@ -54,37 +54,44 @@
    // }
  }
 
- //var myButton = document.getElementById("button");
- var desc = "description of houses";
-
  $("#button").click(function() {
    var name = document.getElementById("input").value;
    console.log("input is ", input);
-   var house = sortingHat(name);
+
+   //[house, description, width, height]
+   arrHoused = sortingHat(name);
+   var house = arrHoused[0];
+   var desc = arrHoused[1];
+   var fWidth = arrHoused[2];
+   var fHeight = arrHoused[3];
 
    // newText = "<p> The Sorting Hat has sorted you into "+
    //        "<h2>" + house + "!</h2>"+
    //        "<p>" + desc + "</p>";
    resultText = document.createElement("p");
-   resultText.innerHTML = name +", you have been sorted into the ";
+   resultText.innerHTML = name + ", you have been sorted into the ";
 
    resultHouse = document.createElement("h2");
    resultHouse.innerHTML = house + "!";
 
    descText = document.createElement("p");
-   descText.innerHTML = desc;
+   descText.innerHTML = desc ;
 
-  froggy = document.createElement("img");
-  froggy.src = "../lab8/img/frog.gif";
-  froggy.id = "imgSort"
-  $("#imgSort").css("width", "10px");
-  $("#imgSort").css("height", "10px");
+  //froggy = document.createElement("img");
+  //froggy.src = "../lab8/img/frog.gif";
+  //froggy.id = "imgFrog"
+  console.log("getting the fWidth ", fWidth);
+  console.log("getting the fHeight ", fHeight);
+  $("#imgFrog").css("width", fWidth);
+  $("#imgFrog").css("height", fHeight);
+  //$("#imgFrog").css("height", fHeight);
+  //$("#imgFrog").toggleClass("imgSort");
 
   //output
   var outputEl = document.getElementById("output");
   //clears previous output
-  //outputEl.innerHTML = "";
-  outputEl.appendChild(froggy);
+  outputEl.innerHTML = "";
+  //outputEl.appendChild(froggy);
   outputEl.appendChild(resultText);
   outputEl.appendChild(resultHouse);
   outputEl.appendChild(descText);

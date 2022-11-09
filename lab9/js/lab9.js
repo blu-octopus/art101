@@ -32,6 +32,6 @@ new2El.innerHTML = "Something else.";
 //7 appened child
 outputEl.appendChild(new1El);
 outputEl.appendChild(new2El);
-
+//yes
 //8 change css attribute?
 //in lab9/css/lab9.css
