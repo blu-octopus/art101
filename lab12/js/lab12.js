@@ -7,21 +7,29 @@
 
  //copied from professor Modes' website
  function checksum(s) {
-   var hash = 0, strlen = s.length, i, c;
-   if ( strlen === 0 ) {
+   //declaring variables
+   hash = 0
+   len = s.length
+   //no input, return 0
+   if ( len === 0 ) {
      return hash;
    }
-   for ( i = 0; i < strlen; i++ ) {
+   //adding up sum
+   for ( i = 0; i < len; i++ ) {
+     //get char
      c = s.charCodeAt( i );
+     //shift left by 5, - itself, + char to get the hash num of c
+     //hash = hash, shifted, + c (adding up the hash)
      hash = ((hash << 5) - hash) + c;
-     hash = hash & hash; // Convert to 32bit integer
+     //convert to 32 bit integer
+     hash = hash & hash;
    }
    return hash;
  };
 
  //task 2
- var houses = ["Gryffindor", "Ravenclaw", "Slytherin", "Hufflepuff"];
- var descriptions = ["you are brave", "you are smart", "you are detail oriented", "you are kind"]
+ var houses = ["Big frog", "Normie frog", "Smol frog", "Chunky frog"];
+ var descriptions = ["this means you are brave", "this means you are smart", "this means you are detail oriented", "this means you are kind"]
 
  function sortingHat(str) {
    len = str.length;
@@ -46,25 +54,39 @@
    // }
  }
 
- var myButton = document.getElementById("button");
+ //var myButton = document.getElementById("button");
  var desc = "description of houses";
 
- myButton.addEventListener("click", function() {
+ $("#button").click(function() {
    var name = document.getElementById("input").value;
    console.log("input is ", input);
-  var house = sortingHat(name);
-  newText = "<p> The Sorting Hat has sorted you into "+
-          "<h2>" + house + "!</h2>"+
-          "<p>" + desc + "</p>";
-  var outputArea = document.getElementById("output");
-  outputArea.innerHTML = newText;
-  //removeClass(outputArea, "hidden");
-  //removeClass(document.getElementById("tail-box"), "hidden");
-})
+   var house = sortingHat(name);
 
-//keep output box hidden before submit
-  var myInput = document.getElementById("input");
-  //myInput.addEventListener("focus", function() {
-    //addClass(document.getElementById("output"), "hidden");
-    //addClass(document.getElementById("tail-box"), "hidden");
-  //});
+   // newText = "<p> The Sorting Hat has sorted you into "+
+   //        "<h2>" + house + "!</h2>"+
+   //        "<p>" + desc + "</p>";
+   resultText = document.createElement("p");
+   resultText.innerHTML = name +", you have been sorted into the ";
+
+   resultHouse = document.createElement("h2");
+   resultHouse.innerHTML = house + "!";
+
+   descText = document.createElement("p");
+   descText.innerHTML = desc;
+
+  froggy = document.createElement("img");
+  froggy.src = "../lab8/img/frog.gif";
+  froggy.id = "imgSort"
+  $("#imgSort").css("width", "10px");
+  $("#imgSort").css("height", "10px");
+
+  //output
+  var outputEl = document.getElementById("output");
+  //clears previous output
+  //outputEl.innerHTML = "";
+  outputEl.appendChild(froggy);
+  outputEl.appendChild(resultText);
+  outputEl.appendChild(resultHouse);
+  outputEl.appendChild(descText);
+
+})
