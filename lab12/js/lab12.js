@@ -69,7 +69,7 @@
    //        "<h2>" + house + "!</h2>"+
    //        "<p>" + desc + "</p>";
    resultText = document.createElement("p");
-   resultText.innerHTML = name + ", you have been sorted into the ";
+   resultText.innerHTML = name + ", you have been sorted as the ";
 
    resultHouse = document.createElement("h2");
    resultHouse.innerHTML = house + "!";
