@@ -88,7 +88,6 @@ body{
   background-color: #F8F8E7;
   text-shadow: rgba(0, 0, 0, .5) 2px 8px 8px -5px;
   border: 10px #5A866D double;
-  border-radius: 10px;
   margin: 10px;
   padding: 20px;
   transition: all 800ms ease-in-out;
@@ -97,9 +96,9 @@ body{
 }
 .output-child{
   transition: all 200ms ease-in-out;
-  flex: 2;
+  flex: 10;
 }
-#output-child.cols {
+.output-child.cols {
     -webkit-column-width: 200px; /* Chrome, Safari, Opera */
     -moz-column-width: 200px; /* Firefox */
     column-width: 200px;
