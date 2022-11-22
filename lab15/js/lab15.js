@@ -33,7 +33,7 @@
      console.log("name: " + data.data.memes[rand]["name"]);
      //append meme to output div
      $("#output").append("<h2>" + data.data.memes[rand]["name"] + "<h2>");
-     $("#output").append("<img src=" + data.data.memes[rand]["url"] + " >");
+     $("#output").append("<img src=" + data.data.memes[rand]["url"] + ">");
  })
 });
 
