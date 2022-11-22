@@ -87,22 +87,10 @@ body{
 #output{
   background-color: #F8F8E7;
   text-shadow: rgba(0, 0, 0, .5) 2px 8px 8px -5px;
-  border: 10px #5A866D double;
   margin: 10px;
   padding: 20px;
   transition: all 800ms ease-in-out;
-  display:flex;
   height: 200px 5%;
-}
-.output-child{
-  transition: all 200ms ease-in-out;
-  flex: 10;
-}
-.output-child.cols {
-  column: all;
-  -webkit-column-width: 200px; /* Chrome, Safari, Opera */
-  -moz-column-width: 200px; /* Firefox */
-  column-width: 200px;
 }
 
 #text {
