@@ -35,7 +35,16 @@
 		<button class="button-55" role="button" onclick="window.location.href='../lab14/index.html'"> Lab 14 </button>
 		<button class="button-55" role="button" onclick="window.location.href='../lab15/index.html'"> Lab 15 </button>
 	</div>
-
+	<h1 onmouseover="go('The dog is in its shed')" onmouseout="blah()">lalala</h1>
+	<div id="goy"></div>
+	<script type="text/javascript">
+		function go(what) {
+				document.getElementById("goy").innerHTML = what;
+		}
+		function blah() {
+				document.getElementById("goy").innerHTML = "";
+		}
+	</script>
 
 	<div id="challenges" class="writeup">
 		<img src="../lab8/img/frog.gif" id="imgFrog"/>

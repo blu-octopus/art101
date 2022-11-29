@@ -3,39 +3,67 @@
  * Created:   11.28.2022
  *
  **/
+ var start = "https://xkcd.com/";
+ var end = "/info.0.json";
+ var num = "";
+ var largest = 2704;
 
- //var outputEl = document.getElementById("output");
+ function makeURL(int){
+   //at end, back to start
+   if (int > largest){
+     int = 1;
+   }else if (int < 1) {
+     //at start, go to end
+     int = 2704;
+   }
+  console.log("new url is " + start + int.toString() + end);
+  return start + int.toString() + end;
+  }
 
+ function getAndPutData(int){
+   //clearcontent("output");
+   document.getElementById("output").innerHTML = "";
+   console.log("cleared output");
 
- // Using the core $.ajax() method
-$.ajax({
-    // The URL for the request (from the api docs)
-    url: "https://xkcd.com/info.0.json",
-    // The data to send (will be converted to a query string)
+   var newUrl = makeURL(int);
+   console.log("getting new api");
 
-    // Whether this is a POST or GET request
-    type: "GET",
-    // The type of data we expect back
-    dataType : "json",
-    // What do we do when the api call is successful
-    //   all the action goes in here
-    success: function(comicObj) {
-        // do stuff
-        console.log(comicObj);
-    },
-    // What we do if the api call fails
-    error: function (jqXHR, textStatus, errorThrown) {
-        // do stuff
-        console.log("Error:", textStatus, errorThrown);
-    }
+   $.ajax({
+       url: newUrl,
+       type: "GET",
+       dataType : "json",
+       success: function(comicObj) {
+           console.log(comicObj);
+       },
+       error: function (jqXHR, textStatus, errorThrown) {
+           console.log("Error:", textStatus, errorThrown);
+       }
+   })
 
-})
+   .done(function(comicObj) {
+     //prev and next buttons
+     $("#output").append("<button id='prev' class='button-55'> prev </button>");
+     $("#output").append("<button id='next' class='button-55'> next </button>");
 
-.done(function(comicObj) {
-  $("#output").append("<h3>" + comicObj.title + "<h3>");
-  console.log("wrote title " + comicObj.title);
-  $("#output").append("<img src=" + comicObj.img + ">");
-  $("#output").append("<p>" + comicObj.alt + "<p>");
- })
+     //comic
+     $("#output").append("<h3>" + comicObj.title + "<h3>");
+     $("#output").append("<img src=" + comicObj.img + ">");
+     $("#output").append("<p>" + comicObj.alt + "<p>");
 
-//$('#activate').click(function(){
+     //event listner for next and prev
+     $('#next').click(function(){
+       console.log("next is clicked");
+       num = comicObj.num + 1;
+       getAndPutData(num);
+     })
+
+     $('#prev').click(function(){
+       console.log("prev is clicked");
+       num = comicObj.num - 1;
+       getAndPutData(num);
+     })
+    })
+ }
+
+//initial comic no num
+ getAndPutData(num);
