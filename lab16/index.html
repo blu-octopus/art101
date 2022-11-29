@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 12 - Libraries and jQuery</title>
-	<link rel="stylesheet" type="text/css" href="css/lab12.css">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	<title>Lab 16: JSON and APIs (XKCD comic!)</title>
+	<link rel="stylesheet" type="text/css" href="css/lab16.css">
 
 	<!-- Load jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-  <script src = "js/lab12.js" defer></script>
+	<script src = "js/lab16.js" defer></script>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 	<div id = "title">
 		<img src="../lab8/img/frog.gif" alt="" id="img1"/>
 		<img src="../lab8/img/frog.gif" alt="" id="img2"/>
-		<h1>Lab 12</h1>
+		<h1>Lab 16</h1>
 	</div>
 
 	<div id ="buttons">
@@ -30,52 +30,44 @@
 		<button class="button-55" role="button" onclick="window.location.href='../lab9/index.html'"> Lab 9</button>
 		<button class="button-55" role="button" onclick="window.location.href='../lab10/index.html'"> Lab 10 </button>
 		<button class="button-55" role="button" onclick="window.location.href='../lab11/index.html'"> Lab 11 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab12/index.html'"> Lab 12 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab13/index.html'"> Lab 13 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab14/index.html'"> Lab 14 </button>
+		<button class="button-55" role="button" onclick="window.location.href='../lab15/index.html'"> Lab 15 </button>
 	</div>
 
 
 	<div id="challenges" class="writeup">
+		<img src="../lab8/img/frog.gif" id="imgFrog"/>
 		<h2> Challenges </h2>
-		<p>I want to make my sorting more frog themed and magical.</p>
+		<p></p>
 	</div>
 
 	<div id="problems" class="writeup">
+		<img src="../lab8/img/frog.gif" id="imgFrog"/>
 		<h2> Problems </h2>
-		<p>It was hard to change the css of the froggy image. And the hash values are confusing.</p>
+		<p></p>
 	</div>
 
 	<div id="results" class="writeup">
-		<h2> Results </h2>
-		<p>For different names you submit into the input box, you are going to get:
-			<ul>
-				<li>A personalized message with the name you submitted</li>
-				<li>The type of frog you are sorted into</li>
-				<li>A short description of your frog</li>
-				<li>A corresponding frog size</li>
-			</ul>
-			For testing, type in <i>1, 2, 3, </i>or <i>4</i> to get the four different results.
-		</p>
+			<img src="../lab8/img/frog.gif" id="imgFrog"/>
+			<h2> Results </h2>
+			<p></p>
 	</div>
 
-	<div class="writeup"  id="output-container">
-		<div class="output-child left" >
-			<h2> Welcome to froggy world!</h2>
-			<p> </p>
-			<p>Please enter your name for sorting</p>
-			<input type="text" id="input">
-			<button class="button-55" id=button>Submit </button>
+
+	<div id="outputConta" class="writeup">
+		<h2> Output </h2>
+
+		<div id="output" >
 		</div>
 
-		<div id="output" class="output-child left" >
-			<h2> </h2>
-		</div>
-
-		<img src="../lab8/img/frog.gif" id="imgFrog"/>
 	</div>
 
-	<div id="bottom" class="bottom">
+	<footer id="bottom" class="bottom">
 		<center>
 			<p></p>
-			<a href="../lab12/js/lab12.js">This lab's .js file</a>
+			<a href="../lab16/js/lab16.js">This lab's .js file</a>
 			<p id="time">Last update:	</p>
 		</center>
 
@@ -83,7 +75,7 @@
 			let text = document.lastModified;
 			document.getElementById("time").innerHTML = "Last update: " + text ;
 		</script>
-	</div>
+	</footer>
 
 </body>
 </html>
